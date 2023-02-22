@@ -1,14 +1,23 @@
 import { MathJax } from 'better-react-mathjax';
-import './App.css';
+import { useState } from 'react';
+import Sidebar from './components/Sidebar';
+import Trigonometry from './components/Trigonometry';
 
 function App() {
-	return (
-		<div className="App">
-			<header className="App-header">
-				<h4>helo :smiley:</h4>
-				<MathJax>{"\\(\\frac{10}{4x} \\approx 2^{12}\\)"}</MathJax>
+	const [selectedTopic, setSelectedTopic] = useState("Trigonometry");
 
-			</header>
+	const topics = ['Algebra', 'Geometry', 'Trigonometry', 'Calculus'];
+
+	const handleTopicSelect = (topic) => {
+		setSelectedTopic(topic);
+	};
+
+	return (
+		<div>
+			<h1>{selectedTopic}</h1>
+
+			<Sidebar topics={topics} onTopicSelect={handleTopicSelect} />
+			{selectedTopic === "Trigonometry" && <Trigonometry />}
 		</div>
 	);
 }

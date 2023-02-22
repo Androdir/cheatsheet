@@ -5,9 +5,14 @@ import App from './App';
 import { MathJaxContext } from 'better-react-mathjax';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const config = {
+	loader: { load: ["input/asciimath"] },
+};
+
 root.render(
 	<React.StrictMode>
-		<MathJaxContext>
+		<MathJaxContext config={config}>
 			<App />
 		</MathJaxContext>
 	</React.StrictMode>

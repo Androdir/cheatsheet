@@ -1,13 +1,133 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+	--sidebar-width: 25vw;
+	font-size: 15px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+}
+
+h1 {
+	width: 100%;
+	text-align: center;
+	border-bottom: 3px solid black;
+	padding-bottom: 2vh;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: calc(var(--sidebar-width) - 2 * var(--sidebar-width));
+	width: var(--sidebar-width);
+	height: 100%;
+	background-color: #f2f2f2;
+	border-right: 1px solid #ddd;
+	transition: left 0.3s ease-in-out;
+}
+
+.sidebar.open {
+	left: 0;
+}
+
+.sidebar a {
+	text-align: center;
+	font-size: min(3vw, 30px);
+}
+
+.toggle-button {
+	position: absolute;
+	top: 2%;
+	right: -35px;
+	width: 35px;
+	height: 35px;
+	border: none;
+	background-color: #f2f2f2;
+	color: #777;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.topic-list {
+	list-style: none;
+	margin: 0;
+	padding: 10px;
+}
+
+.topic-item {
+	margin: 5px 0;
+}
+
+.topic-item a {
+	display: block;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #333;
+	text-decoration: none;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.topic-item a:hover {
+	background-color: #ddd;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	margin: 10px;
+	width: 100%;
+}
+
+.group li {
+	margin-bottom: 20px;
+}
+
+.group li * {
+	margin-bottom: 5px;
+}
+
+img {
+	width: 20vw;
+}
+
+mjx-container.MathJax {
+	pointer-events: none;
+	font-size: 1vw;
+}
+
+.values {
+	min-width: 20vw;
+	border-collapse: collapse;
+}
+
+.values td:first-child, .values thead tr th:first-child {
+	border-right: 2px solid black;
+}
+
+.values thead {
+	border-bottom: 2px solid black;
+}
+
+.values tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.values tbody tr:hover {
+	background-color: #c7d6d6;
+}
+
+.values td, .values th {
+	text-align: center;
+	padding: 5px;
 }
