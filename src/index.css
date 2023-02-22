@@ -1,6 +1,5 @@
 :root {
 	--sidebar-width: 25vw;
-	font-size: 15px;
 }
 
 body {
@@ -93,17 +92,17 @@ h1 {
 	margin-bottom: 20px;
 }
 
-.group li * {
-	margin-bottom: 5px;
-}
-
 img {
-	width: 20vw;
+	width: min(75vw, 600px);
 }
 
 mjx-container.MathJax {
 	pointer-events: none;
-	font-size: 1vw;
+	font-size: max(1vw, 15px) !important;
+}
+
+span[style="display: block;"] {
+	margin-bottom: 10px;
 }
 
 .values {

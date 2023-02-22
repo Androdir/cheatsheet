@@ -12,27 +12,27 @@ function Trigonometry() {
 			<section className="group">
 				<ul>
 					<li>
-						<MathJax>`tantheta = (opp)/(adj) = sintheta/costheta`</MathJax>
-						<MathJax>`tan(-theta) = -tantheta`</MathJax>
+						<MathJax>`tantheta equiv (opp)/(adj) equiv sintheta/costheta`</MathJax>
+						<MathJax>`tan(-theta) equiv -tantheta`</MathJax>
 					</li>
 					<li>
-						<MathJax>`cottheta = 1/tantheta = costheta/sintheta`</MathJax>
+						<MathJax>`cottheta equiv 1/tantheta equiv costheta/sintheta`</MathJax>
 					</li>
 					<li>
-						<MathJax>`sintheta = (opp)/(hyp)`</MathJax>
-						<MathJax>`sintheta = cos(90^circ - theta)`</MathJax>
-						<MathJax>`sin(-theta) = -sintheta`</MathJax>
+						<MathJax>`sintheta equiv (opp)/(hyp)`</MathJax>
+						<MathJax>`sintheta equiv cos(90^circ - theta)`</MathJax>
+						<MathJax>`sin(-theta) equiv -sintheta`</MathJax>
 					</li>
 					<li>
-						<MathJax>`csctheta = 1/sintheta`</MathJax>
+						<MathJax>`csctheta equiv 1/sintheta`</MathJax>
 					</li>
 					<li>
-						<MathJax>`costheta = (adj)/(hyp)`</MathJax>
-						<MathJax>`costheta = cos(90^circ - theta)`</MathJax>
-						<MathJax>`cos(-theta) = costheta`</MathJax>
+						<MathJax>`costheta equiv (adj)/(hyp)`</MathJax>
+						<MathJax>`costheta equiv cos(90^circ - theta)`</MathJax>
+						<MathJax>`cos(-theta) equiv costheta`</MathJax>
 					</li>
 					<li>
-						<MathJax>`sectheta = 1/costheta`</MathJax>
+						<MathJax>`sectheta equiv 1/costheta`</MathJax>
 					</li>
 				</ul>
 			</section>
