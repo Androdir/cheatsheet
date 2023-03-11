@@ -1,12 +1,16 @@
-import { MathJax } from 'better-react-mathjax';
 import { useState } from 'react';
+import Mechanics from './components/Mechanics';
 import Sidebar from './components/Sidebar';
+import SimpleHarmonicMotion from './components/SimpleHarmonicMotion';
 import Trigonometry from './components/Trigonometry';
+import Indices from './components/Indices';
+import Differentiation from './components/Differentiation';
 
 function App() {
 	const [selectedTopic, setSelectedTopic] = useState("Trigonometry");
 
-	const topics = ['Algebra', 'Geometry', 'Trigonometry', 'Calculus'];
+	const mathsTopics = ["Trigonometry", "Differentiation", "Quadratics", "Logarithms & Indices", "Geometry"];
+	const physTopics = ["Mechanics", "Simple Harmonic Motion", "Waves"];
 
 	const handleTopicSelect = (topic) => {
 		setSelectedTopic(topic);
@@ -16,8 +20,12 @@ function App() {
 		<div>
 			<h1>{selectedTopic}</h1>
 
-			<Sidebar topics={topics} onTopicSelect={handleTopicSelect} />
+			<Sidebar mathsTopics={mathsTopics} physTopics={physTopics} onTopicSelect={handleTopicSelect} />
 			{selectedTopic === "Trigonometry" && <Trigonometry />}
+			{selectedTopic === "Mechanics" && <Mechanics />}
+			{selectedTopic === "Simple Harmonic Motion" && <SimpleHarmonicMotion />}
+			{selectedTopic === "Logarithms & Indices" && <Indices />}
+			{selectedTopic === "Differentiation" && <Differentiation />}
 		</div>
 	);
 }

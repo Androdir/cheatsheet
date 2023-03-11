@@ -147,6 +147,36 @@ function Trigonometry() {
 				</ul>
 			</section>
 
+			<h2><u>Small Angles</u></h2>
+			<section className="group">
+				<ul>
+					<li>
+						<MathJax>`sin(theta) approx theta`</MathJax>
+					</li>
+					<li>
+						<MathJax>`tan(theta) approx theta`</MathJax>
+					</li>
+					<li>
+						<MathJax>`cos(theta) approx 1 - theta^2/2`</MathJax>
+					</li>
+				</ul>
+			</section>
+
+			<h2><u>T-Method</u> (<MathJax style={{"display": "inline"}}>`t = tan(A/2)`</MathJax>)</h2>
+			<section className="group">
+				<ul>
+					<li>
+						<MathJax>`sin(A) = (2t)/(1+t^2)`</MathJax>
+					</li>
+					<li>
+						<MathJax>`cos(A) = (1-t^2)/(1+t^2)`</MathJax>
+					</li>
+					<li>
+						<MathJax>`tan(A) = (2t)/(1-t^2)`</MathJax>
+					</li>
+				</ul>
+			</section>
+
 			<h2><u>Function Values</u></h2>
 			<section className="group">
 				<table className="values">
