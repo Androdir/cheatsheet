@@ -9,6 +9,12 @@ function Sidebar({ mathsTopics, physTopics, onTopicSelect }) {
 		setIsOpen(!isOpen);
 	};
 
+	const onTopicClick = topic => {
+		onTopicSelect(topic);
+		toggleSidebar(); // close sidebar after selecting a topic
+		document.cookie = `topic=${topic}`; // save topic to cookie
+	}
+
 	return (
 		<div className={`sidebar ${isOpen ? 'open' : ''}`}>
 			<button className="toggle-button" onClick={toggleSidebar}>
@@ -18,7 +24,7 @@ function Sidebar({ mathsTopics, physTopics, onTopicSelect }) {
 				<p className="sidebar-title"><b><u>Maths</u></b></p>
 				{mathsTopics.map((topic, index) => (
 					<li key={index} className="topic-item">
-						<button onClick={() => onTopicSelect(topic)}>
+						<button onClick={() => onTopicClick(topic)}>
 							{topic}
 						</button>
 					</li>
@@ -26,12 +32,16 @@ function Sidebar({ mathsTopics, physTopics, onTopicSelect }) {
 				<p className="sidebar-title"><b><u>Physics</u></b></p>
 				{physTopics.map((topic, index) => (
 					<li key={index} className="topic-item">
-						<button onClick={() => onTopicSelect(topic)}>
+						<button onClick={() => onTopicClick(topic)}>
 							{topic}
 						</button>
 					</li>
 				))}
 			</ul>
+
+			<a className="link" href="https://www.symbolab.com/solver/step-by-step" target="_blank" rel="noreferrer">
+				<p>:D</p>
+			</a>
 		</div>
 	);
 }

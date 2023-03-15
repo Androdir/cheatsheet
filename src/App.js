@@ -7,7 +7,7 @@ import Indices from './components/Indices';
 import Differentiation from './components/Differentiation';
 
 function App() {
-	const [selectedTopic, setSelectedTopic] = useState("Trigonometry");
+	const [selectedTopic, setSelectedTopic] = useState(document.cookie.split('=')[1] || "Trigonometry");
 
 	const mathsTopics = ["Trigonometry", "Differentiation", "Quadratics", "Logarithms & Indices", "Geometry"];
 	const physTopics = ["Mechanics", "Simple Harmonic Motion", "Waves"];
