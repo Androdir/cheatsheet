@@ -47,28 +47,36 @@ function Differentiation() {
 									<td><MathJax>`sec^2(x)`</MathJax></td>
 								</tr>
 								<tr>
-									<td><MathJax>`cot(x)`</MathJax></td>
-									<td><MathJax>`-csc^2(x)`</MathJax></td>
-								</tr>
-								<tr>
 									<td><MathJax>`csc(x)`</MathJax></td>
 									<td><MathJax>`-csc(x)cot(x)`</MathJax></td>
 								</tr>
 								<tr>
 									<td><MathJax>`sec(x)`</MathJax></td>
-									<td><MathJax>`-sec(x)tan(x)`</MathJax></td>
+									<td><MathJax>`sec(x)tan(x)`</MathJax></td>
 								</tr>
 								<tr>
-									<td><MathJax>`sec(x)`</MathJax></td>
-									<td><MathJax>`sec(x)tan(x)`</MathJax></td>
+									<td><MathJax>`cot(x)`</MathJax></td>
+									<td><MathJax>`-csc^2(x)`</MathJax></td>
+								</tr>
+								<tr>
+									<td><MathJax>`sin^-1(x/a)`</MathJax></td>
+									<td><MathJax>`1/sqrt(a^2-x^2)`</MathJax></td>
+								</tr>
+								<tr>
+									<td><MathJax>`cos^-1(x/a)`</MathJax></td>
+									<td><MathJax>`(-1)/sqrt(a^2-x^2)`</MathJax></td>
+								</tr>
+								<tr>
+									<td><MathJax>`tan^-1(x/a)`</MathJax></td>
+									<td><MathJax>`a/(a^2+x^2)`</MathJax></td>
 								</tr>
 								<tr title="product rule">
 									<td><MathJax>`n*d`</MathJax></td>
-									<td><MathJax>`n dotd+dotn d`</MathJax></td>
+									<td><MathJax>`dotn d+n dotd`</MathJax></td>
 								</tr>
 								<tr title="quotient rule">
 									<td><MathJax>`n/d`</MathJax></td>
-									<td><MathJax>`(d dotn-dotd n)/d^2`</MathJax></td>
+									<td><MathJax>`(dotn d-n dotd)/d^2`</MathJax></td>
 								</tr>
 							</tbody>
 						</table>
