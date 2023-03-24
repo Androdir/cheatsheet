@@ -7,7 +7,6 @@ function Differentiation() {
 
 			<h2><u>Derivatives</u></h2>
 			<section className="group">
-
 				<ul>
 					<li>
 						<table className="values">

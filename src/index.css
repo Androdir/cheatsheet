@@ -155,6 +155,10 @@ span[style="display: block;"] {
 	padding: 5px;
 }
 
+.values-blank td {
+	font-size: 20px;
+}
+
 .link {
 	text-align: center;
 	position: absolute;

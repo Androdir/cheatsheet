@@ -65,7 +65,7 @@ function Trigonometry() {
 						<MathJax>`sec^2x-tan^2x equiv 1`</MathJax>
 					</li>
 					<li>
-						<MathJax>`csc^2x-cot^2x=1`</MathJax>
+						<MathJax>`csc^2x-cot^2x equiv 1`</MathJax>
 					</li>
 				</ul>
 			</section>

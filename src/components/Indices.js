@@ -21,7 +21,7 @@ function Indices() {
 						<MathJax>`log_n(a)+log_n(b)=log_n(ab)`</MathJax>
 					</li>
 					<li>
-						<MathJax>`blog_n(a)=log_n(a)^b`</MathJax>
+						<MathJax>`blog_n(a)=log_n(a^b)`</MathJax>
 					</li>
 					<li>
 						<div style={{"fontSize": "20px"}}><MathJax style={{"display": "inline"}}>`log_n(a)=b {"<"}={">"} n^b=a`</MathJax>&nbsp;&nbsp;&nbsp;&nbsp;(<MathJax style={{"display": "inline"}}>`a{">"}0, n{">"}0, n != 1`</MathJax>)</div>
@@ -31,6 +31,9 @@ function Indices() {
 					</li>
 					<li>
 						<MathJax>`log_a(b)=log_c(b)/log_c(a)`</MathJax>
+					</li>
+					<li>
+						<MathJax>`a^(log_a(b))=b`</MathJax>
 					</li>
 				</ul>
 			</section>
