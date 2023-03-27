@@ -119,12 +119,12 @@ h1 {
 }
 
 img {
-	width: min(75vw, 500px);
+	width: min(50vw, 500px);
 }
 
 mjx-container.MathJax {
 	pointer-events: none;
-	font-size: max(1.5vw, 14px) !important;
+	font-size: min(3.5vw, 20px) !important;
 }
 
 .values {
@@ -156,13 +156,13 @@ mjx-container.MathJax {
 }
 
 .values-blank td:first-child {
-	font-size: 20px;
-	padding-right: 50px;
+	font-size: max(1vw, 14px);
+	padding-right: 20px;
 	user-select: none;
 }
 
 .values-blank tr:not(:last-child) td {
-	padding-bottom: 30px;
+	padding-bottom: 25px;
 }
 
 .link {
@@ -208,7 +208,7 @@ tr[aria-describedby]  {
 	line-height: 20px;
 	right: -10px;
 	top: -10px;
-	font-size: 24px;
+	font-size: 20px;
 	background: #ffffff;
 	border-radius: 18px;
 	border: 1px solid #cfcece;
