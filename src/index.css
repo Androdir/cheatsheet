@@ -111,13 +111,15 @@ h1 {
 	padding: 10px;
 }
 
-.group li {
+.group li:not(:last-child) {
 	margin-bottom: 20px;
+}
+.group li {
 	margin-left: -10px;
 }
 
 img {
-	width: min(75vw, 600px);
+	width: min(75vw, 500px);
 }
 
 mjx-container.MathJax {
@@ -125,16 +127,13 @@ mjx-container.MathJax {
 	font-size: max(1.5vw, 14px) !important;
 }
 
-span[style="display: block;"] {
-	margin-bottom: 10px;
-}
-
 .values {
 	min-width: 20vw;
 	border-collapse: collapse;
 }
 
-.values td:first-child, .values thead tr th:first-child {
+.values td:first-child,
+.values thead tr th:first-child {
 	border-right: 2px solid black;
 }
 
@@ -150,13 +149,20 @@ span[style="display: block;"] {
 	background-color: #bfcece;
 }
 
-.values td, .values th {
+.values td,
+.values th {
 	text-align: center;
 	padding: 5px;
 }
 
-.values-blank td {
+.values-blank td:first-child {
 	font-size: 20px;
+	padding-right: 50px;
+	user-select: none;
+}
+
+.values-blank tr:not(:last-child) td {
+	padding-bottom: 30px;
 }
 
 .link {
@@ -169,4 +175,53 @@ span[style="display: block;"] {
 .link p {
 	margin: 0;
 	font-size: 25px;
+}
+
+.modal {
+	font-size: 12px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+tr[aria-describedby]  {
+	cursor: pointer;
+}
+
+.modal>.header {
+	width: 100%;
+	border-bottom: 1px solid gray;
+	font-size: 20px;
+	text-align: center;
+	padding: 5px;
+}
+
+.modal>.content {
+	padding: 10px 5px;
+}
+
+.modal>.close {
+	cursor: pointer;
+	position: absolute;
+	display: block;
+	padding: 2px 5px;
+	line-height: 20px;
+	right: -10px;
+	top: -10px;
+	font-size: 24px;
+	background: #ffffff;
+	border-radius: 18px;
+	border: 1px solid #cfcece;
+}
+
+.math-text {
+	font-size: 20px;
+}
+
+.math-text span[style="display: block;"] {
+	display: inline-block !important;
+}
+
+.math-text span {
+	white-space: break-spaces;
 }

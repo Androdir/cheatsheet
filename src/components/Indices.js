@@ -1,5 +1,6 @@
 import { MathJax } from 'better-react-mathjax';
 import React from 'react';
+import MathText from './MathText';
 
 function Indices() {
 	return (
@@ -24,7 +25,7 @@ function Indices() {
 						<MathJax>`blog_n(a)=log_n(a^b)`</MathJax>
 					</li>
 					<li>
-						<div style={{"fontSize": "20px"}}><MathJax style={{"display": "inline"}}>`log_n(a)=b {"<"}={">"} n^b=a`</MathJax>&nbsp;&nbsp;&nbsp;&nbsp;(<MathJax style={{"display": "inline"}}>`a{">"}0, n{">"}0, n != 1`</MathJax>)</div>
+						<MathText text={["`log_n(a)=b <=> n^b=a`", "    (", "`a>0, n>0, n != 1`", ")"]}/>
 					</li>
 					<li>
 						<MathJax>`log_(n^b)(a)=1/blog_n(a)`</MathJax>

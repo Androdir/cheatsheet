@@ -1,8 +1,10 @@
 import { MathJax } from 'better-react-mathjax';
 import React from 'react';
+import Modal from './Modal';
 import sin from '../res/sin.jpg';
 import cos from '../res/cos.jpg';
 import tan from '../res/tan.jpg';
+import MathText from './MathText';
 
 function Trigonometry() {
 	return (
@@ -149,20 +151,25 @@ function Trigonometry() {
 
 			<h2><u>Small Angles</u></h2>
 			<section className="group">
-				<ul>
-					<li>
-						<MathJax>`sin(theta) approx theta`</MathJax>
-					</li>
-					<li>
-						<MathJax>`tan(theta) approx theta`</MathJax>
-					</li>
-					<li>
-						<MathJax>`cos(theta) approx 1 - theta^2/2`</MathJax>
-					</li>
-				</ul>
+				<Modal element={
+					<ul>
+						<li>
+							<MathJax>`sin(theta) approx theta`</MathJax>
+						</li>
+						<li>
+							<MathJax>`tan(theta) approx theta`</MathJax>
+						</li>
+						<li>
+							<MathJax>`cos(theta) approx 1 - theta^2/2`</MathJax>
+						</li>
+					</ul>
+				}
+					title="Small Angles"
+					content={<MathText text={["`theta`", " must be very small and in radians."]} />}
+				/>
 			</section>
 
-			<h2><u>T-Method</u> (<MathJax style={{"display": "inline"}}>`t = tan(A/2)`</MathJax>)</h2>
+			<h2><u>T-Method</u> (<MathJax style={{ "display": "inline" }}>`t = tan(A/2)`</MathJax>)</h2>
 			<section className="group">
 				<ul>
 					<li>

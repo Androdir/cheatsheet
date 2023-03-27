@@ -21,7 +21,9 @@ function Sidebar({ mathsTopics, physTopics, onTopicSelect }) {
 				<FontAwesomeIcon icon={isOpen ? faChevronLeft : faChevronRight} />
 			</button>
 			<ul className="sidebar-list">
-				<p className="sidebar-title"><b><u>Maths</u></b></p>
+				<li>
+					<p className="sidebar-title"><b><u>Maths</u></b></p>
+				</li>
 				{mathsTopics.map((topic, index) => (
 					<li key={index} className="topic-item">
 						<button onClick={() => onTopicClick(topic)}>
@@ -29,7 +31,9 @@ function Sidebar({ mathsTopics, physTopics, onTopicSelect }) {
 						</button>
 					</li>
 				))}
-				<p className="sidebar-title"><b><u>Physics</u></b></p>
+				<li>``
+					<p className="sidebar-title"><b><u>Physics</u></b></p>
+				</li>
 				{physTopics.map((topic, index) => (
 					<li key={index} className="topic-item">
 						<button onClick={() => onTopicClick(topic)}>

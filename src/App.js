@@ -10,7 +10,7 @@ import Geometry from './components/Geometry';
 function App() {
 	const [selectedTopic, setSelectedTopic] = useState(document.cookie.split('=')[1] || "Trigonometry");
 
-	const mathsTopics = ["Trigonometry", "Differentiation", "Quadratics", "Logarithms & Indices", "Geometry"];
+	const mathsTopics = ["Trigonometry", "Differentiation", "Geometry", "Logarithms & Indices"];
 	const physTopics = ["Mechanics", "Simple Harmonic Motion", "Waves"];
 
 	const handleTopicSelect = (topic) => {
@@ -18,7 +18,7 @@ function App() {
 	};
 
 	return (
-		<div>
+		<>
 			<h1>{selectedTopic}</h1>
 
 			<Sidebar mathsTopics={mathsTopics} physTopics={physTopics} onTopicSelect={handleTopicSelect} />
@@ -28,7 +28,7 @@ function App() {
 			{selectedTopic === "Logarithms & Indices" && <Indices />}
 			{selectedTopic === "Differentiation" && <Differentiation />}
 			{selectedTopic === "Geometry" && <Geometry />}
-		</div>
+		</>
 	);
 }
 
