@@ -31,7 +31,7 @@ function Integration() {
 								</tr>
 								<tr>
 									<td><MathJax>`1/(ax+b)`</MathJax></td>
-									<td><MathJax>`ln|ax+b|/a + C`</MathJax></td>
+									<td><MathJax>`(ln|ax+b|)/a + C`</MathJax></td>
 								</tr>
 								<tr>
 									<td><MathJax>`e^(ax)`</MathJax></td>
