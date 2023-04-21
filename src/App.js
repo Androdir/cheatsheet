@@ -6,11 +6,12 @@ import Trigonometry from './components/Trigonometry';
 import Indices from './components/Indices';
 import Differentiation from './components/Differentiation';
 import Geometry from './components/Geometry';
+import Integration from './components/Integration';
 
 function App() {
 	const [selectedTopic, setSelectedTopic] = useState(document.cookie.split('=')[1] || "Trigonometry");
 
-	const mathsTopics = ["Trigonometry", "Differentiation", "Geometry", "Logarithms & Indices"];
+	const mathsTopics = ["Trigonometry", "Differentiation", "Integration", "Geometry", "Logarithms & Indices"];
 	const physTopics = ["Mechanics", "Simple Harmonic Motion", "Waves"];
 
 	const handleTopicSelect = (topic) => {
@@ -27,6 +28,7 @@ function App() {
 			{selectedTopic === "Simple Harmonic Motion" && <SimpleHarmonicMotion />}
 			{selectedTopic === "Logarithms & Indices" && <Indices />}
 			{selectedTopic === "Differentiation" && <Differentiation />}
+			{selectedTopic === "Integration" && <Integration />}
 			{selectedTopic === "Geometry" && <Geometry />}
 		</>
 	);
